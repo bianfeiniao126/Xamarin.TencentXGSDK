@@ -48,5 +48,6 @@ using Android.App;
 [assembly: UsesPermission(Android.Manifest.Permission.BatteryStats)]
 
 /*http://xg.qq.com/ 申请Key*/
-[assembly: MetaDataAttribute("XG_V2_ACCESS_ID", Value = "2100017678")]
-[assembly: MetaDataAttribute("XG_V2_ACCESS_KEY", Value = "A457IA46PTDM")]
+//换成你的key
+[assembly: MetaDataAttribute("XG_V2_ACCESS_ID", Value = "2100017xxx")]
+[assembly: MetaDataAttribute("XG_V2_ACCESS_KEY", Value = "A457IAxxx")]
