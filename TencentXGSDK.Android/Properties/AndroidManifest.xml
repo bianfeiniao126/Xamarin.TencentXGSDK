@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.xmvdo.xingetest" android:installLocation="auto">
+	<uses-sdk android:minSdkVersion="8" />
+	<application>
+		<!-- push服务广播 -->
+		<receiver android:name="com.tencent.android.tpush.XGPushReceiver" android:process=":xg_service_v2">
+			<intent-filter android:priority="0x7fffffff">
+				<action android:name="com.tencent.android.tpush.action.SDK" />
+				<action android:name="android.intent.action.BOOT_COMPLETED" />
+				<action android:name="android.bluetooth.adapter.action.STATE_CHANGED" />
+				<action android:name="android.intent.action.TIME_SET" />
+				<action android:name="android.intent.action.DATE_CHANGED" />
+				<action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+				<action android:name="android.intent.action.BATTERY_CHANGED" />
+				<action android:name="android.intent.action.ACTION_BATTERY_OKAY" />
+				<action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+				<action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+				<action android:name="android.intent.action.USER_PRESENT" />
+				<action android:name="com.tencent.android.tpush.action.INTERNAL_PUSH_MESSAGE" />
+			</intent-filter>
+			<intent-filter android:priority="0x7fffffff">
+				<action android:name="android.intent.action.MEDIA_UNMOUNTED" />
+				<action android:name="android.intent.action.MEDIA_REMOVED" />
+				<action android:name="android.intent.action.MEDIA_CHECKING" />
+				<action android:name="android.intent.action.MEDIA_EJECT" />
+				<data android:scheme="file" />
+			</intent-filter>
+		</receiver>
+		<!-- push服务 	-->
+		<service android:name="com.tencent.android.tpush.service.XGPushService" android:exported="true" android:persistent="true" android:process=":xg_service_v2" />
+	</application>
+</manifest>

@@ -1,0 +1,19 @@
+﻿<enum-method-mappings>
+  <!--
+  This example changes the Java method:
+    android.support.v4.app.Fragment.SavedState.writeToParcel (int flags)
+  to be:
+    android.support.v4.app.Fragment.SavedState.writeToParcel (Android.OS.ParcelableWriteFlags flags)
+  when bound in C#.
+  
+  <mapping jni-class="android/support/v4/app/Fragment.SavedState">
+    <method jni-name="writeToParcel" parameter="flags" clr-enum-type="Android.OS.ParcelableWriteFlags" />
+  </mapping>
+  -->
+
+  <mapping jni-class="com/tencent/android/tpush/XGPushNotificationBuilder">
+    <method jni-name="setDefaults" parameter="p0" clr-enum-type="Android.App.NotificationDefaults" />
+    <method jni-name="setFlags" parameter="p0" clr-enum-type="Android.App.NotificationFlags" />
+  </mapping>
+  
+</enum-method-mappings>

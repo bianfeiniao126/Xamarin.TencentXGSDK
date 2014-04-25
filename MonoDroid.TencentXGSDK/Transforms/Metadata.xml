@@ -1,0 +1,75 @@
+<metadata>
+  <!--
+  This sample removes the class: android.support.v4.content.AsyncTaskLoader.LoadTask:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='AsyncTaskLoader.LoadTask']" />
+  
+  This sample removes the method: android.support.v4.content.CursorLoader.loadInBackground:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
+  -->
+<remove-node path="/api/package[@name='com.tencent.android.tpush']/class[@name='XGPushManager']/method[@name='unregisterPush' and count(parameter)=3 and parameter[1][@type='android.content.Context'] and parameter[2][@type='java.lang.String'] and parameter[3][@type='com.tencent.android.tpush.XGIOperateCallback']]" />
+
+  
+  <!--registerPush-->
+  <attr path="/api/package[@name='com.tencent.android.tpush']/class[@name='XGPushManager']/method[@name='registerPush' and count(parameter)=2 and parameter[1][@type='android.content.Context'] and parameter[2][@type='java.lang.String']]/parameter[@name='p0']" name="name">context</attr>
+  <attr path="/api/package[@name='com.tencent.android.tpush']/class[@name='XGPushManager']/method[@name='registerPush' and count(parameter)=2 and parameter[1][@type='android.content.Context'] and parameter[2][@type='java.lang.String']]/parameter[@name='p1']" name="name">account</attr>
+
+  <!--registerPush-->
+  <attr path="/api/package[@name='com.tencent.android.tpush']/class[@name='XGPushManager']/method[@name='registerPush' and count(parameter)=3 and parameter[1][@type='android.content.Context'] and parameter[2][@type='java.lang.String'] and parameter[3][@type='com.tencent.android.tpush.XGIOperateCallback']]/parameter[@name='p0']" name="name">context</attr>
+  <attr path="/api/package[@name='com.tencent.android.tpush']/class[@name='XGPushManager']/method[@name='registerPush' and count(parameter)=3 and parameter[1][@type='android.content.Context'] and parameter[2][@type='java.lang.String'] and parameter[3][@type='com.tencent.android.tpush.XGIOperateCallback']]/parameter[@name='p1']" name="name">account</attr>
+  <attr path="/api/package[@name='com.tencent.android.tpush']/class[@name='XGPushManager']/method[@name='registerPush' and count(parameter)=3 and parameter[1][@type='android.content.Context'] and parameter[2][@type='java.lang.String'] and parameter[3][@type='com.tencent.android.tpush.XGIOperateCallback']]/parameter[@name='p2']" name="name">callback</attr>
+
+  <!--registerPush-->
+  <attr path="/api/package[@name='com.tencent.android.tpush']/class[@name='XGPushManager']/method[@name='registerPush' and count(parameter)=6 and parameter[1][@type='android.content.Context'] and parameter[2][@type='java.lang.String'] and parameter[3][@type='java.lang.String'] and parameter[4][@type='int'] and parameter[5][@type='java.lang.String'] and parameter[6][@type='com.tencent.android.tpush.XGIOperateCallback']]/parameter[@name='p0']" name="name">context</attr>
+  <attr path="/api/package[@name='com.tencent.android.tpush']/class[@name='XGPushManager']/method[@name='registerPush' and count(parameter)=6 and parameter[1][@type='android.content.Context'] and parameter[2][@type='java.lang.String'] and parameter[3][@type='java.lang.String'] and parameter[4][@type='int'] and parameter[5][@type='java.lang.String'] and parameter[6][@type='com.tencent.android.tpush.XGIOperateCallback']]/parameter[@name='p1']" name="name">account</attr>
+  <attr path="/api/package[@name='com.tencent.android.tpush']/class[@name='XGPushManager']/method[@name='registerPush' and count(parameter)=6 and parameter[1][@type='android.content.Context'] and parameter[2][@type='java.lang.String'] and parameter[3][@type='java.lang.String'] and parameter[4][@type='int'] and parameter[5][@type='java.lang.String'] and parameter[6][@type='com.tencent.android.tpush.XGIOperateCallback']]/parameter[@name='p2']" name="name">ticket</attr>
+  <attr path="/api/package[@name='com.tencent.android.tpush']/class[@name='XGPushManager']/method[@name='registerPush' and count(parameter)=6 and parameter[1][@type='android.content.Context'] and parameter[2][@type='java.lang.String'] and parameter[3][@type='java.lang.String'] and parameter[4][@type='int'] and parameter[5][@type='java.lang.String'] and parameter[6][@type='com.tencent.android.tpush.XGIOperateCallback']]/parameter[@name='p3']" name="name">ticketType</attr>
+  <attr path="/api/package[@name='com.tencent.android.tpush']/class[@name='XGPushManager']/method[@name='registerPush' and count(parameter)=6 and parameter[1][@type='android.content.Context'] and parameter[2][@type='java.lang.String'] and parameter[3][@type='java.lang.String'] and parameter[4][@type='int'] and parameter[5][@type='java.lang.String'] and parameter[6][@type='com.tencent.android.tpush.XGIOperateCallback']]/parameter[@name='p4']" name="name">qua</attr>
+  <attr path="/api/package[@name='com.tencent.android.tpush']/class[@name='XGPushManager']/method[@name='registerPush' and count(parameter)=6 and parameter[1][@type='android.content.Context'] and parameter[2][@type='java.lang.String'] and parameter[3][@type='java.lang.String'] and parameter[4][@type='int'] and parameter[5][@type='java.lang.String'] and parameter[6][@type='com.tencent.android.tpush.XGIOperateCallback']]/parameter[@name='p5']" name="name">callback</attr>
+  <!--setPushNotificationBuilder-->
+  <attr path="/api/package[@name='com.tencent.android.tpush']/class[@name='XGPushManager']/method[@name='setPushNotificationBuilder']/parameter[@name='p0']" name="name">context</attr>
+  <attr path="/api/package[@name='com.tencent.android.tpush']/class[@name='XGPushManager']/method[@name='setPushNotificationBuilder']/parameter[@name='p1']" name="name">notificationBulderId</attr>
+  <attr path="/api/package[@name='com.tencent.android.tpush']/class[@name='XGPushManager']/method[@name='setPushNotificationBuilder']/parameter[@name='p2']" name="name">notificationBuilder</attr>
+
+<!--setTag-->
+  <attr path="/api/package[@name='com.tencent.android.tpush']/class[@name='XGPushManager']/method[@name='setTag']/parameter[@name='p0']" name="name">context</attr>
+  <attr path="/api/package[@name='com.tencent.android.tpush']/class[@name='XGPushManager']/method[@name='setTag']/parameter[@name='p1']" name="name">tagName</attr>
+
+  <!--deleteTag-->
+  <attr path="/api/package[@name='com.tencent.android.tpush']/class[@name='XGPushManager']/method[@name='deleteTag']/parameter[@name='p0']" name="name">context</attr>
+  <attr path="/api/package[@name='com.tencent.android.tpush']/class[@name='XGPushManager']/method[@name='deleteTag']/parameter[@name='p1']" name="name">tagName</attr>
+
+  
+  <!--onSetTagResult-->
+  <attr path="/api/package[@name='com.tencent.android.tpush']/class[@name='XGPushBaseReceiver']/method[@name='onSetTagResult']/parameter[@name='p0']" name="name">context</attr>
+  <attr path="/api/package[@name='com.tencent.android.tpush']/class[@name='XGPushBaseReceiver']/method[@name='onSetTagResult']/parameter[@name='p1']" name="name">errorCode</attr>
+  <attr path="/api/package[@name='com.tencent.android.tpush']/class[@name='XGPushBaseReceiver']/method[@name='onSetTagResult']/parameter[@name='p2']" name="name">tagName</attr>
+
+  <!--onDeleteTagResult-->
+  <attr path="/api/package[@name='com.tencent.android.tpush']/class[@name='XGPushBaseReceiver']/method[@name='onDeleteTagResult']/parameter[@name='p0']" name="name">context</attr>
+  <attr path="/api/package[@name='com.tencent.android.tpush']/class[@name='XGPushBaseReceiver']/method[@name='onDeleteTagResult']/parameter[@name='p1']" name="name">errorCode</attr>
+  <attr path="/api/package[@name='com.tencent.android.tpush']/class[@name='XGPushBaseReceiver']/method[@name='onDeleteTagResult']/parameter[@name='p2']" name="name">tagName</attr>
+
+
+  <!--onTextMessage-->
+  <attr path="/api/package[@name='com.tencent.android.tpush']/class[@name='XGPushBaseReceiver']/method[@name='onTextMessage']/parameter[@name='p0']" name="name">context</attr>
+  <attr path="/api/package[@name='com.tencent.android.tpush']/class[@name='XGPushBaseReceiver']/method[@name='onTextMessage']/parameter[@name='p1']" name="name">message</attr>
+<!--onRegisterResult-->
+  <attr path="/api/package[@name='com.tencent.android.tpush']/class[@name='XGPushBaseReceiver']/method[@name='onRegisterResult']/parameter[@name='p0']" name="name">context</attr>
+  <attr path="/api/package[@name='com.tencent.android.tpush']/class[@name='XGPushBaseReceiver']/method[@name='onRegisterResult']/parameter[@name='p1']" name="name">errorCode</attr>
+  <attr path="/api/package[@name='com.tencent.android.tpush']/class[@name='XGPushBaseReceiver']/method[@name='onRegisterResult']/parameter[@name='p2']" name="name">registerMessage</attr>
+
+  <!--onUnregisterResult-->
+  <attr path="/api/package[@name='com.tencent.android.tpush']/class[@name='XGPushBaseReceiver']/method[@name='onUnregisterResult']/parameter[@name='p0']" name="name">context</attr>
+  <attr path="/api/package[@name='com.tencent.android.tpush']/class[@name='XGPushBaseReceiver']/method[@name='onUnregisterResult']/parameter[@name='p1']" name="name">errorCode</attr>
+<!--onUnregisterResult-->
+  <attr path="/api/package[@name='com.tencent.android.tpush']/class[@name='XGPushBaseReceiver']/method[@name='onReceive']/parameter[@name='p0']" name="name">context</attr>
+  <attr path="/api/package[@name='com.tencent.android.tpush']/class[@name='XGPushBaseReceiver']/method[@name='onReceive']/parameter[@name='p1']" name="name">intent</attr>
+
+<!--onNotifactionShowedResult-->
+  <attr path="/api/package[@name='com.tencent.android.tpush']/class[@name='XGPushBaseReceiver']/method[@name='onNotifactionShowedResult']/parameter[@name='p0']" name="name">context</attr>
+  <attr path="/api/package[@name='com.tencent.android.tpush']/class[@name='XGPushBaseReceiver']/method[@name='onNotifactionShowedResult']/parameter[@name='p1']" name="name">notifiShowedRlt</attr>
+  <!--onNotifactionClickedResult-->
+  <attr path="/api/package[@name='com.tencent.android.tpush']/class[@name='XGPushBaseReceiver']/method[@name='onNotifactionClickedResult']/parameter[@name='p0']" name="name">context</attr>
+  <attr path="/api/package[@name='com.tencent.android.tpush']/class[@name='XGPushBaseReceiver']/method[@name='onNotifactionClickedResult']/parameter[@name='p1']" name="name">message</attr>
+
+</metadata>
